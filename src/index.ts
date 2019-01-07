@@ -1,8 +1,9 @@
 import http from "http";
+import ip from "ip";
 import rpio from "rpio";
 import url from "url";
 
-const hostname = process.env.HOSTNAME;
+const hostname = ip.address();
 const key = process.env.AUTH_KEY;
 
 const port = 8080;

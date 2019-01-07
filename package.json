@@ -17,8 +17,10 @@
   "author": "Allen Hsu",
   "license": "ISC",
   "dependencies": {
+    "@types/ip": "^1.1.0",
     "@types/node": "^10.12.18",
     "@types/rpio": "0.0.2",
+    "ip": "^1.1.5",
     "rpio": "^1.0.11"
   },
   "devDependencies": {
