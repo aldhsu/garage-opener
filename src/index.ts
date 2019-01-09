@@ -21,7 +21,7 @@ const server = http.createServer((req: http.IncomingMessage, res: http.ServerRes
         res.statusCode = 200;
         res.setHeader("Content-Type", "text/plain");
         res.end("OK");
-        rpio.open(3, rpio.OUTPUT, rpio.HIGH);
+        rpio.open(3, rpio.OUTPUT, rpio.LOW);
         setTimeout(() => {
             rpio.close(3);
         }, 200);
